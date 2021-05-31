@@ -194,6 +194,10 @@ endif(COMPILE_PYTHON3_BINDINGS)
 # OpenCV
 find_package(OpenCV COMPONENTS core highgui imgproc videoio imgcodecs calib3d objdetect REQUIRED)
 
+# RN edited
+find_package(Eigen3 REQUIRED)
+find_package(Qt5 COMPONENTS Core Widgets DBus LinguistTools Concurrent Test REQUIRED)
+
 # Doxygen documentation
 if (GENERATE_DOC)
     include(documentation)
